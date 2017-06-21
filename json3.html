@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JSON 3</title>
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $.getJSON('http://swapi.co/api/people/1/', function (data) {
+                     console.log(data);
+                });
+            });
+        </script>            
+    </body>
+</html>

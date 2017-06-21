@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Errors 2</title>
+    </head>
+    <body>
+        <script>
+            // We're expecting an array here, not null
+            data = null;            
+            try {
+                // Trying to log the length of the "array"
+                console.log(data.length);
+            } catch (e) {
+                // Log the error to the console
+                console.log(e);
+            }            
+        </script>            
+    </body>
+</html>

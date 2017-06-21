@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM 3</title>
+    </head>
+    <body>
+        <div id="box" style="background-color: blue; height:50px; width:50px;"></div>
+        <select id="colorSelector" style="margin-top:1em;">
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="red">Red</option>
+        </select>
+        <script>
+            // Get select box
+            colorSelector = document.getElementById('colorSelector');
+                        
+            // Add event listener for select box
+            colorSelector.addEventListener('change', function() {
+                // Select box
+                box = document.getElementById('box');
+                // Change background-color of box
+                box.style.backgroundColor = this.value;
+            }, false);
+        </script>            
+    </body>
+</html>

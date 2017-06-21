@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery 2</title>
+    </head>
+    <body>
+        <div id="box" style="background-color: blue; height:50px; width:50px;"></div>
+        <select id="colorSelector" style="margin-top:1em;">
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="red">Red</option>
+        </select>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                // Select colorSelect id and bind to change event
+                $('#colorSelector').change(function() {
+                    // Select box id and change css property
+                    $('#box').css('background-color', this.value);
+                });
+            });
+        </script>            
+    </body>
+</html>

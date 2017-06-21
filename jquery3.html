@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery 3</title>
+    </head>
+    <body>
+        <h1>HTML Title</h1>
+        <p id="error">Houston, we have a problem!</p>
+        <p class="special">This paragraph is special.</p>
+        <p class="special">So is this one.</p>
+        <p class="special">This one too!</p>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                // Select by h1 and change HTML
+                $('h1').html('JavaScript Title');
+                
+                // Select by id and change background color
+                $('#error').css('background-color', 'red');
+                
+                // Select by class and change font size
+                $('.special').css('font-size', '50px');
+            });
+        </script>            
+    </body>
+</html>

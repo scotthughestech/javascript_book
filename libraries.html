@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Libraries</title>
+        <link rel="stylesheet" href="colorbox-master/example1/colorbox.css">
+    </head>
+    <body>
+        <h1>Photo Gallery</h1>
+        <p><a class="gallery" href="colorbox-master/content/ohoopee1.jpg" title="Jack and his grandfather on the Ohoopee">Photo_1</a></p>
+        <p><a class="gallery" href="colorbox-master/content/ohoopee2.jpg" title="Jack on the Ohoopee as a child">Photo_2</a></p>
+        <p><a class="gallery" href="colorbox-master/content/ohoopee3.jpg" title="Jack on the Ohoopee as an adult">Photo_3</a></p>       
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="colorbox-master/jquery.colorbox-min.js"></script>        
+        <script>
+            $(document).ready(function () {
+                $('.gallery').colorbox({rel:'gallery'});
+            });
+        </script>            
+    </body>
+</html>

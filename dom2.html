@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM 2</title>
+    </head>
+    <body>
+        <div>Div number 1</div>
+        <div class="test">Div number 2</div>
+        <div>Div number 3</div>
+        <div class="test">Div number 4</div>
+        <div>Div number 5</div>
+        <div class="test">Div number 6</div>       
+        <script>
+            // Get elements by class name
+            testDivs = document.getElementsByClassName('test');
+            
+            // Loop through testDivs
+            for (var i=0; i < testDivs.length; i++)
+            {
+                testDivs[i].style.backgroundColor = "red";
+            }
+        </script>            
+    </body>
+</html>

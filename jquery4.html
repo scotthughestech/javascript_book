@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery 4</title>
+    </head>
+    <body>
+        <h1>The Box Game!</h1>
+        <div style="width: 100px; height: 100px; background-color: blue"></div>
+        <button style="margin-top: 1em;">Toggle!</button>
+        
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                // Bind event handler to the click event
+                $('button').click(function() {
+                    // FadeToggle the div
+                    $('div').fadeToggle();
+                });
+            });
+        </script>            
+    </body>
+</html>
